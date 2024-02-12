@@ -1,6 +1,9 @@
 # 1. command line
-# 2. -var-file
-# 3. terraform.tfvars
+# 2. -var-file  -- the filename with extension .tfvars eg: roboshop.tfvars (custom terraform.tfvars file)
+## command to use: 
+##   terraform plan -var-file="roboshop.tfvars"
+#### terraform plan -var-file="roboshop.tfvars" -var="instance_type=t3.large"
+# 3. terraform.tfvars  -- Values in terraform.tfvars is used to override the default values from variables.tf file
 # 4. ENV variables
 variable "ami_id" {
   type = string
